@@ -8,9 +8,13 @@ are the only external dependencies, loaded from unpkg.
 
 ## Deployment
 
-| Host | URL |
-| --- | --- |
-| GitHub Pages | https://haneeshazli.github.io/aldecodesign/ |
+| Version | GitHub Pages | Vercel |
+| --- | --- | --- |
+| Current (v3) | https://haneeshazli.github.io/aldecodesign/ | https://aldecodesign.vercel.app |
+| V2 (editorial) | https://haneeshazli.github.io/aldecodesign/v2/ | https://aldecodesign.vercel.app/v2/ |
+
+`index.html` is the current design. `v2/index.html` is a separate editorial
+design — a different layout, not an iteration of the current one.
 
 GitHub Pages serves the `main` branch root. Pushing to `main` publishes the site.
 
