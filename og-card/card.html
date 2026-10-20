@@ -1,0 +1,66 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @font-face { font-family:'Cormorant Garamond'; font-weight:300 400; font-style:normal;
+    src:url('assets/785339b6-f819-4977-b355-3780c8144ffb.woff2') format('woff2'); }
+  @font-face { font-family:'Jost'; font-weight:300 500; font-style:normal;
+    src:url('assets/400bbae6-f872-4926-95db-5e27c3d8f21c.woff2') format('woff2'); }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; }
+  body { position:relative; background:#0d0c0b; font-family:'Jost',sans-serif; }
+
+  .bg { position:absolute; inset:0; background:url('assets/img_hero_jpg.jpg') center 56%/cover no-repeat;
+        transform:scale(1.04); filter:saturate(1.08) contrast(1.06) brightness(1.1); }
+  .scrim { position:absolute; inset:0;
+    background:
+      linear-gradient(100deg, rgba(12,10,9,.93) 0%, rgba(12,10,9,.85) 32%, rgba(12,10,9,.46) 54%, rgba(12,10,9,.12) 70%, rgba(12,10,9,.20) 100%),
+      linear-gradient(to top, rgba(12,10,9,.34), rgba(12,10,9,0) 38%); }
+  .grain { position:absolute; inset:0; opacity:.16; mix-blend-mode:overlay;
+    background-image:radial-gradient(rgba(255,255,255,.5) .5px, transparent .5px);
+    background-size:3px 3px; }
+
+  .wrap { position:absolute; inset:0; display:flex; align-items:center; padding:0 64px; }
+
+  .left { width:600px; color:#fff; }
+  .logo { width:264px; display:block; margin-bottom:24px; }
+  .eyebrow { font-size:15px; font-weight:400; letter-spacing:.34em; text-transform:uppercase;
+             color:rgba(255,255,255,.82); margin-bottom:20px; }
+  .rule { width:62px; height:1px; background:rgba(255,255,255,.5); margin-bottom:24px; }
+  h1 { font-family:'Cormorant Garamond',serif; font-weight:300; font-size:70px; line-height:1.02;
+       letter-spacing:-.012em; margin-bottom:26px; }
+  h1 em { font-style:italic; display:block; }
+  .svc { font-size:17px; font-weight:300; letter-spacing:.055em; color:rgba(255,255,255,.9); }
+  .svc b { font-weight:400; }
+  .cta { display:inline-flex; align-items:center; gap:10px; margin-top:30px;
+         border:1px solid rgba(255,255,255,.55); padding:12px 22px; border-radius:999px;
+         font-size:13.5px; font-weight:400; letter-spacing:.2em; text-transform:uppercase; color:#fff; }
+  .cta .dot { width:7px; height:7px; border-radius:50%; background:#25D366; box-shadow:0 0 0 4px rgba(37,211,102,.22); }
+
+  .right { position:absolute; right:64px; top:0; height:630px; display:flex; align-items:center; }
+  .stack { position:relative; width:392px; height:452px; }
+  .card { position:absolute; border:5px solid #fff; border-radius:3px; overflow:hidden;
+          box-shadow:0 26px 54px rgba(0,0,0,.52); background:#222; }
+  .card img { width:100%; height:100%; object-fit:cover; display:block; }
+  .c1 { width:252px; height:324px; right:92px; top:10px; transform:rotate(-3.1deg); }
+  .c2 { width:206px; height:262px; right:0; top:168px; transform:rotate(3.4deg); }
+  .tag { position:absolute; right:4px; bottom:4px; font-size:10.5px; letter-spacing:.2em;
+         text-transform:uppercase; color:rgba(255,255,255,.75); }
+</style></head>
+<body>
+  <div class="bg"></div><div class="scrim"></div><div class="grain"></div>
+  <div class="wrap">
+    <div class="left">
+      <img class="logo" src="assets/02b894e6-8667-47a6-9a65-648dbf8b89cb.png" alt="">
+      <div class="eyebrow">Dengkil · Selangor</div>
+      <div class="rule"></div>
+      <h1>Beautiful spaces,<em>thoughtfully designed.</em></h1>
+      <div class="svc"><b>Interior Design</b> · <b>Built-In Cabinetry</b> · <b>Renovation</b></div>
+      <div class="cta"><span class="dot"></span> Free estimate on WhatsApp</div>
+    </div>
+  </div>
+  <div class="right"><div class="stack">
+    <div class="card c1"><img src="assets/img_homestay_living_jpg.jpg" alt=""></div>
+    <div class="card c2"><img src="assets/img_canopy_lounge_jpg.jpg" alt=""></div>
+  </div></div>
+</body></html>
